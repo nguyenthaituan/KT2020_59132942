@@ -1,0 +1,27 @@
+﻿@model KT2020_59132942.Models.LoaiDocGia
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LoaiDocGia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenLoaiDG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLoaiDG)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaLoaiDG }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
